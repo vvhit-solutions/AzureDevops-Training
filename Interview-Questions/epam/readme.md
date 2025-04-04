@@ -1,37 +1,111 @@
-Azure Devops Engineer 
+# Azure DevOps Engineer - Cloud & DevOps Scenarios
 
-Cloud Azure 
-Designing Landing zones in Azure (Scenario based questions on this)
-Implementing hub and spoke model in Azure.
-On-premises to Azure connectivity
-Scenario on Azure Front door, Application Gateway  security - waf policies and Traffic manager.
-Scenario on Azure RBAC, Azure PIM 
-Storage accounts and key vaults 
+## **Azure Cloud**
 
-Terraform 
-How to  create some resources in Azure.
-How to create resources using Terraform modules, explain
-Scenario on Terraform output command.
-Scenario on State commands and lookup function. 
-Foreach and lookup function use cases
+### **1. Designing Landing Zones in Azure**
+- Scenario-based questions on designing Azure Landing Zones.
+- Best practices for governance, security, and networking.
+- Implementation using Azure Blueprints and Policies.
 
-AKS/Kubernetes
-Scenario on Rolling upgrade strategy in AKS.
-Networking in AKS 
-Helm and its configuration, write and explain.
-Scenario based on Taint toleration and node affinity.
-Security and access in AKS
-Probes and its use case in AKS
+### **2. Implementing Hub and Spoke Model**
+- Architecture overview.
+- Implementing VNet Peering, Route Tables, and Private Link.
+- Securing hub-to-spoke communication.
 
-Scripting:
-Write and explain sample script in any language like python, bash, PowerShell.
-Sample scripts like, how to count the occurrences of string in a file, how to print the logs from a file , print prime numbers etc
+### **3. On-Premises to Azure Connectivity**
+- VPN Gateway vs. ExpressRoute.
+- Configuring Site-to-Site and Point-to-Site VPNs.
+- Private Link vs. Service Endpoints.
 
-Azure Devops/Gitlab/Github Actions
-Write down Yaml pipeline and explain the concept of conditioning and depends on in that pipeline.
-Scenario based on Agent pools and runners.
-Scenario based on branching and deployment strategies.
-Questions on tools like sonarQube, Veracode , fortify etc
-Scenario based on End-to-end Pipeline setup for any tech application in Azure Devops
-Scenario based on Variable groups, library and Deployment groups in Azure Devops
-Scenario based on writing `Pipeline in Gitlab and Github Actions
+### **4. Security & Traffic Management**
+- **Azure Front Door, Application Gateway, WAF Policies, and Traffic Manager.**
+- Load balancing strategies and DDoS protection.
+
+### **5. Azure RBAC & PIM**
+- Role-Based Access Control (RBAC) scenarios.
+- Configuring Privileged Identity Management (PIM) for Just-in-Time (JIT) access.
+
+### **6. Storage Accounts & Key Vaults**
+- Implementing secure storage access using Private Endpoints.
+- Role of Managed Identities in securing access to storage and secrets.
+
+## **Terraform**
+
+### **1. Resource Creation in Azure**
+- Using Terraform to create Azure resources.
+
+### **2. Terraform Modules**
+- Structuring Terraform code using modules.
+- Example of reusable modules for resource provisioning.
+
+### **3. Terraform Output Commands**
+- Capturing and utilizing Terraform outputs in automation workflows.
+
+### **4. State Commands & Lookup Function**
+- Managing state files (init, plan, apply, refresh, state list, show, rm, mv, import).
+- Using `lookup` function to fetch values dynamically.
+
+### **5. Foreach & Lookup Functions**
+- Use cases of `foreach` and `lookup` for resource provisioning.
+
+## **AKS/Kubernetes**
+
+### **1. Rolling Upgrade Strategy**
+- Implementing rolling updates and rollback in AKS.
+
+### **2. AKS Networking**
+- CNI vs. Kubenet networking.
+- Network policies and ingress controllers.
+
+### **3. Helm & Configuration Management**
+- Writing Helm charts and managing application configurations.
+
+### **4. Taint Toleration & Node Affinity**
+- Scheduling workloads using taints, tolerations, and node affinity rules.
+
+### **5. Security & Access**
+- Implementing RBAC and Azure AD integration.
+- Pod security policies and network security controls.
+
+### **6. Probes in AKS**
+- Readiness, Liveness, and Startup probes use cases.
+
+## **Scripting (Python, Bash, PowerShell)**
+
+### **1. Sample Scripts**
+- Counting occurrences of a string in a file.
+- Printing logs from a file.
+- Generating prime numbers.
+
+## **Azure DevOps / GitLab / GitHub Actions**
+
+### **1. YAML Pipeline**
+- Writing a YAML pipeline with `dependsOn` and `conditions`.
+
+### **2. Agent Pools & Runners**
+- Selecting self-hosted vs. Microsoft-hosted agents.
+
+### **3. Branching & Deployment Strategies**
+- GitFlow, Trunk-based development, Feature branching.
+
+### **4. Security & Code Quality Tools**
+- SonarQube, Veracode, Fortify integration.
+
+### **5. End-to-End Pipeline Setup**
+- CI/CD setup for a tech application in Azure DevOps.
+
+### **6. Variables & Deployment Groups**
+- Managing variables using Variable Groups and Library.
+- Deployment strategies using Deployment Groups.
+
+### **7. Writing Pipelines in GitLab & GitHub Actions**
+- Example scenarios and best practices.
+
+---
+
+### **Contributions**
+Feel free to raise PRs to enhance this repository with additional use cases and examples.
+
+### **License**
+This project is licensed under the MIT License.
+
