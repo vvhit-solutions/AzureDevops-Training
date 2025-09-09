@@ -1335,3 +1335,30 @@ run , cmd command
 multi staging in docker 
 ns <--> ns connection 
 cordon
+
+
+
+# Helm
+
+| Command                                            | Scenario                                          | Example                                                    |
+| -------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------- |
+| `helm repo add <name> <url>`                       | Add a Helm chart repo (e.g., Bitnami, Prometheus) | `helm repo add bitnami https://charts.bitnami.com/bitnami` |
+| `helm repo update`                                 | Refresh local repo cache after adding repos       | `helm repo update`                                         |
+| `helm search repo <keyword>`                       | Find charts inside added repos                    | `helm search repo nginx`                                   |
+| `helm install <release> <chart>`                   | Install a new Helm release                        | `helm install myapp bitnami/nginx`                         |
+| `helm install <release> <chart> -f values.yaml`    | Install using custom values                       | `helm install myapp bitnami/nginx -f values.yaml`          |
+| `helm install <release> <chart> --set key=value`   | Override chart values inline                      | `helm install myapp bitnami/nginx --set replicaCount=3`    |
+| `helm list`                                        | List installed releases in current namespace      | `helm list`                                                |
+| `helm list -A`                                     | List all releases across namespaces               | `helm list -A`                                             |
+| `helm status <release>`                            | Check status/details of a release                 | `helm status myapp`                                        |
+| `helm history <release>`                           | View all revisions of a release (for rollback)    | `helm history myapp`                                       |
+| `helm upgrade <release> <chart> --set key=value`   | Upgrade an app with new config                    | `helm upgrade myapp bitnami/nginx --set image.tag=latest`  |
+| `helm rollback <release> <revision>`               | Roll back to previous working version             | `helm rollback myapp 2`                                    |
+| `helm uninstall <release>`                         | Uninstall a Helm release                          | `helm uninstall myapp`                                     |
+| `helm template <release> <chart>`                  | Render manifests without applying                 | `helm template myapp bitnami/nginx`                        |
+| `helm install <release> <chart> --dry-run --debug` | Test install without deploying                    | `helm install testapp bitnami/nginx --dry-run --debug`     |
+| `helm pull <chart> --untar`                        | Download a chart locally for inspection           | `helm pull bitnami/nginx --untar`                          |
+| `helm show values <chart>`                         | Show default values of a chart                    | `helm show values bitnami/nginx`                           |
+| `helm get values <release>`                        | Show effective values of a deployed release       | `helm get values myapp`                                    |
+| `helm dependency update`                           | Download chart dependencies (for umbrella charts) | `helm dependency update ./mychart`                         |
+
