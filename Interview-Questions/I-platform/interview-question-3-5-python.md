@@ -11,17 +11,14 @@ Must have
 Shell Scripting
 The candidate should be proficient in writing shell scripts to automate tasks, manage system processes, and perform system administration tasks.
 
-1 . write a shell script to do a curl request 10 times with delay of 1 sec.
-
+1. write a shell script to do a curl request 10 times with delay of 1 sec.
 2. i have script which i want to run whenever i start the system how to do it in lynux to automate this task.
-   
 3. provide step by step instuctions how do you attach a storage disk to linux system which is of 5tb storage, what file type you are going to use.
 
 ### Virtualization
 The candidate should be familiar with virtualization technologies on Linux, such as KVM, Docker, and VMware, and be able to deploy virtual machines, containers, and manage virtual resources.
 
-1. what are different virtulization technologies you awre of ? 
-
+1. what are different virtulization technologies you awre of ?
 2. VMware vs Docker ? 
 
 https://github.com/vvhit-solutions/AzureDevops-Training/blob/441a94e0176d83ab7e3cb640afb1860216232a12/Interview-Questions/I-platform/interview-questions-hard-3-5.md?plain=1#L45
