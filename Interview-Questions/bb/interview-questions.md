@@ -1,4 +1,4 @@
-# Grand Central Platform - Technical Interview Questions
+# Technical Interview Questions
 
 ## Repository Analysis Summary
 
