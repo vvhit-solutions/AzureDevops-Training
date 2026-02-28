@@ -1,5 +1,5 @@
 #  System Engineer Interview Questions
-*Based on Grand Central Infrastructure and ECOS Applications*
+*Based on Central Infrastructure and ECOS Applications*
 
 ## Table of Contents
 1. [Azure Cloud and Terraform (Questions 1-20)](#azure-cloud-and-terraform)
@@ -1339,7 +1339,7 @@ gc-connector/
 ```yaml
 apiVersion: v2
 name: gc-connector
-description: Grand Central Connector Helm Chart
+description: Central Connector Helm Chart
 type: application
 version: 1.0.0
 appVersion: "1.2.3"
@@ -2128,7 +2128,7 @@ spec:
   
   maturity: stable
   provider:
-    name: Grand Central Platform Team
+    name: Central Platform Team
   
   installModes:
   - type: OwnNamespace
